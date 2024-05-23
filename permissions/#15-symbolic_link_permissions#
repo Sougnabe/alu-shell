@@ -1,0 +1,3 @@
+#!/bin/bash
+cselect 
+hown vincent:staff _hello vincent staff
