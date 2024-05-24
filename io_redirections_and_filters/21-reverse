@@ -1,2 +1,2 @@
 #!/bin/bash
-tac | rv
+echo '$input' tac | rv
