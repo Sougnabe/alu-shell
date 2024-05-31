@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#display 10 times "Best School" but the 9th one has a hi under.
+count=0
+while [ $count -lt 10 ]
+do
+if [ $count -eq 10 ]
+echo "hi"
+fi
+echo "Best School"
+(( count++ ))
+done
