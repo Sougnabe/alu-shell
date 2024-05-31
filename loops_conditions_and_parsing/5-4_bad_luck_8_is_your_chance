@@ -6,11 +6,11 @@ do
   if [ $count -eq 4 ]
   then
     echo "bad luck"
-  fi
   elif [ $count -eq 8 ]
   then
     echo "good luck"
-  elfi
+  else
   echo "Best School"
   (( count++ ))
+  fi
 done
