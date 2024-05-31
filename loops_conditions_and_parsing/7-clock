@@ -3,22 +3,14 @@
 #display hours from 0 to 12
 #display minutes from 1 to 59
 count=0
-while [ $count -le 59 ]
+while [ $count -le 12 ]
 do
-    if [ $count -eq 0 ]
-    then
-	echo  "Hour: 0"
-    fi
-    echo "$count"
-    (( count++ ))
-done
-x=1
-while [ $x -le 9 ]
+    echo  "Hour: $count"
+    x=1
+while [ $x -le 59 ]
 do
-    if [ $x -eq 0]
-    then
-	echo "Hour: 1"
-    fi
-    echo "$count"
-    (( count++ ))
+    echo "$x"
+    (( x++ ))
     done
+(( count++ ))
+done
