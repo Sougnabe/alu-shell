@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #displays ten times "Best School" followed by numbers
 count=o
 until [ $count -eq 10 ]
