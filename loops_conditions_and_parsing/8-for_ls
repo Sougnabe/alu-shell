@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#list the contains in the current directory in a format different from the normale one
+list=$(ls)
+for i [ in $list ];
+do
+    echo "$i" | cut -d '-' -f2
+    done
+    
+    
