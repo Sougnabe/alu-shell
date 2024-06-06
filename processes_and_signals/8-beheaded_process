@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #kills the process 7-highlander.
 term_handler () {
-	pkill -f "7-highlander"
+	pkill -f 7-highlander
 	exit
 }
 trap term_handler SIGTERM
