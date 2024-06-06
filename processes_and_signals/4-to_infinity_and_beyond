@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#displays To infinity and beyond indefinitely.
+while true, do
+x=#$(date + "%T")
+echo "To unfinity and beyond"
+sleep 2
+done
