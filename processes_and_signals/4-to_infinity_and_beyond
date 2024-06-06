@@ -2,6 +2,6 @@
 #displays To infinity and beyond indefinitely.
 while true, do
 x=#$(date + "%T")
-echo "To unfinity and beyond indefinitely"
+echo "To infinity and beyond indefinitely"
 sleep 2
 done
