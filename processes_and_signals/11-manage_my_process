@@ -8,8 +8,8 @@
 PID_FILE="/var/run/my_process.pid"
 PROCESS_SCRIPT="./manage_my_process"
 start() {
-	$PROCESS_SCRIPT &
-	echo "$(cat ps manage_my_process)" > $PID_FILE
+	./manage_my_process
+	echo $! > $PID_FILE
 echo "manage_my_process started"
 }
 
