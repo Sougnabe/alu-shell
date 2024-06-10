@@ -26,8 +26,12 @@ fi
 }
 
 restart() {
-stop
-start
+	if [ -f "$PID_FILE" ]; then
+        kill $(cat $PID_FILE)
+rm -f $PID_FILE
+	fi
+ $PROCESS_SCRIPT &
+        echo $! > $PID_FILE
 echo "manage_my_process restarted"
 }
 
