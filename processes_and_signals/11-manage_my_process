@@ -21,7 +21,7 @@ fi
 
 stop() {
 if [ -f "$PID_FILE" ]; then
-kill $(cat $PID_FILE)
+pkill -f "manage_my_process"
 rm -f $PID_FILE
 echo "manage_my_process stopped"
 else
